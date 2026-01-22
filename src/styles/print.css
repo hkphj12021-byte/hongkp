@@ -1,20 +1,97 @@
-/* src/styles/print.css */
+/* =========================
+   PRINT RESET
+========================= */
 @media print {
   * {
+    box-shadow: none !important;
+    text-shadow: none !important;
     animation: none !important;
     transition: none !important;
   }
 
-  body {
+  html, body {
     width: 210mm;
-    margin: 0;
+    background: #fff !important;
   }
 
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* =========================
+   GLOBAL PAGE RULE
+========================= */
+@media print {
   section {
-    page-break-after: always;
+    page-break-inside: avoid;
   }
 
-  h1, h2, h3, p {
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* =========================
+   PROJECTS SECTION (⭐ 핵심)
+========================= */
+@media print {
+
+  /* Projects는 항상 새 페이지에서 시작 */
+  #projects {
+    page-break-before: always;
+  }
+
+  /* ❌ grid → ⭕ block (깨짐 방지 핵심) */
+  #projects .grid {
+    display: block !important;
+  }
+
+  /* 카드 하나를 하나의 덩어리로 */
+  #projects .card,
+  #projects [class*="Card"] {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 28px;
+  }
+
+  /* 카드 내부도 쪼개지지 않게 */
+  #projects .card *,
+  #projects [class*="Card"] * {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* 이미지 확대 / hover / transform 제거 */
+  #projects img {
     transform: none !important;
+    transition: none !important;
+    object-fit: cover;
+  }
+
+  /* overflow-hidden 때문에 잘리는 현상 방지 */
+  #projects * {
+    overflow: visible !important;
+  }
+
+  /* 배지, 아이콘 색상 유지 */
+  #projects .bg-red-600 {
+    background-color: #dc2626 !important;
+    color: #fff !important;
+  }
+
+  #projects .text-red-600 {
+    color: #dc2626 !important;
+  }
+}
+
+/* =========================
+   OPTIONAL: 카드 2개씩 페이지 분리 (추천)
+========================= */
+@media print {
+  #projects .card:nth-child(2n),
+  #projects [class*="Card"]:nth-child(2n) {
+    page-break-after: always;
   }
 }

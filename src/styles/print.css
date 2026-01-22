@@ -1,34 +1,5 @@
 /* src/styles/print.css */
-@media print {
-  /* 애니메이션 / 트랜지션 제거 */
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
 
-  /* A4 기준 고정 */
-  html, body {
-    width: 210mm;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* 섹션 단위 페이지 분리 */
-  section {
-    page-break-after: always;
-  }
-
-  /* transform 때문에 깨지는 거 방지 */
-  h1, h2, h3, p, div {
-    transform: none !important;
-  }
-
-  /* 그림자, blur 같은 것 제거 (깨짐 방지) */
-  * {
-    box-shadow: none !important;
-    filter: none !important;
-  }
-}
 @media print {
 
   /* === Projects 섹션 전체 === */

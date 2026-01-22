@@ -1,0 +1,20 @@
+/* src/styles/print.css */
+@media print {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  body {
+    width: 210mm;
+    margin: 0;
+  }
+
+  section {
+    page-break-after: always;
+  }
+
+  h1, h2, h3, p {
+    transform: none !important;
+  }
+}

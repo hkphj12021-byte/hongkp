@@ -7,6 +7,7 @@ export function Projects() {
   const projects = [
     {
       title: "해외안전여행 홈페이지 및 애플리케이션 고도화",
+      client: "외교부",
       category: "웹/앱 고도화",
       description: "외교부 해외안전여행 플랫폼의 전반적인 기능 개선과 UI/UX 구조 재정비를 총괄한 리뉴얼 프로젝트입니다. 요구사항 정의부터 WBS·RFP 분석까지 기획 전 과정을 리드하며, 홈페이지·앱 오픈 이후 2차 고도화 및 유지보수 계약 체계까지 수립했습니다.",
       image: "https://images.unsplash.com/photo-1642873965200-4dd3753336b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBzYWZldHklMjB3ZWJzaXRlJTIwYXBwfGVufDF8fHx8MTc2ODk1Nzc2OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -15,6 +16,7 @@ export function Projects() {
     },
     {
       title: "함께학교 배리어프리 서비스 구축",
+      client: "EBS",
       category: "신규 구축",
       description: "공공 서비스의 접근성 요건을 사후 검증이 아닌 기획 초기 구조 설계 기준으로 재정의한 프로젝트입니다. 장애 유형별 사용자 시나리오를 기반으로 서비스 구조와 정책을 총괄 설계했으며, 그 결과 배리어프리 웹사이트 오픈 및 웹 접근성 품질인증 마크를 획득했습니다.",
       image: "https://images.unsplash.com/photo-1576864333223-db90dadfb975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2Nlc3NpYmlsaXR5JTIwZWR1Y2F0aW9uJTIwd2Vic2l0ZXxlbnwxfHx8fDE3Njg5NTc3Njl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -23,6 +25,7 @@ export function Projects() {
     },
     {
       title: "브랜드 홈 홈페이지 고도화",
+      client: "현대자동차",
       category: "PM",
       description: "고객 요구사항을 기반으로 프로젝트 범위와 일정을 정의하고, WBS 수립·투입 인력 관리·산출물 작성 및 고객 커뮤니케이션을 총괄한 프로젝트입니다. 기획·개발·운영 전 과정을 관리하여 1차 고도화를 완료했으며, 2차 고도화에 대한 구두 계약 성과를 도출했습니다.",
       image: "https://images.unsplash.com/photo-1762340275704-d0e31637286a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZCUyMGNvcnBvcmF0ZSUyMHdlYnNpdGV8ZW58MXx8fHwxNzY4OTU3NzY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
@@ -31,6 +34,7 @@ export function Projects() {
     },
     {
       title: "대고객 플랫폼 개선 프로젝트",
+      client: "현대건설",
       category: "PM",
       description: "고객 요구사항을 기반으로 프로젝트 범위와 일정을 정의하고, WBS 수립·투입 인력 운영·산출물 관리 및 고객 커뮤니케이션을 총괄한 개선 프로젝트입니다. 주요 기능 고도화를 안정적으로 완료하여 대고객 서비스 품질을 개선했습니다.",
       image: "https://images.unsplash.com/photo-1702988708132-8a5354ec783d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMHNlcnZpY2UlMjBwbGF0Zm9ybXxlbnwxfHx8fDE3Njg5NTcyNTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",

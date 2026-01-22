@@ -1,97 +1,62 @@
-/* =========================
-   PRINT RESET
-========================= */
+/* src/styles/print.css */
 @media print {
+  /* 애니메이션 / 트랜지션 제거 */
   * {
-    box-shadow: none !important;
-    text-shadow: none !important;
     animation: none !important;
     transition: none !important;
   }
 
+  /* A4 기준 고정 */
   html, body {
     width: 210mm;
-    background: #fff !important;
+    margin: 0;
+    padding: 0;
   }
 
-  body {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-}
-
-/* =========================
-   GLOBAL PAGE RULE
-========================= */
-@media print {
+  /* 섹션 단위 페이지 분리 */
   section {
-    page-break-inside: avoid;
+    page-break-after: always;
   }
 
-  h1, h2, h3 {
-    page-break-after: avoid;
+  /* transform 때문에 깨지는 거 방지 */
+  h1, h2, h3, p, div {
+    transform: none !important;
+  }
+
+  /* 그림자, blur 같은 것 제거 (깨짐 방지) */
+  * {
+    box-shadow: none !important;
+    filter: none !important;
   }
 }
-
-/* =========================
-   PROJECTS SECTION (⭐ 핵심)
-========================= */
 @media print {
 
-  /* Projects는 항상 새 페이지에서 시작 */
+  /* === Projects 섹션 전체 === */
   #projects {
     page-break-before: always;
   }
 
-  /* ❌ grid → ⭕ block (깨짐 방지 핵심) */
+  /* grid 레이아웃 제거 (⭐ 핵심) */
   #projects .grid {
     display: block !important;
   }
 
-  /* 카드 하나를 하나의 덩어리로 */
+  /* 카드 하나 = 하나의 덩어리 */
   #projects .card,
   #projects [class*="Card"] {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
-  /* 카드 내부도 쪼개지지 않게 */
-  #projects .card *,
-  #projects [class*="Card"] * {
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
-  }
-
-  /* 이미지 확대 / hover / transform 제거 */
+  /* 이미지 transform / hover 완전 제거 */
   #projects img {
     transform: none !important;
     transition: none !important;
-    object-fit: cover;
   }
 
-  /* overflow-hidden 때문에 잘리는 현상 방지 */
+  /* overflow로 잘리는 현상 방지 */
   #projects * {
     overflow: visible !important;
-  }
-
-  /* 배지, 아이콘 색상 유지 */
-  #projects .bg-red-600 {
-    background-color: #dc2626 !important;
-    color: #fff !important;
-  }
-
-  #projects .text-red-600 {
-    color: #dc2626 !important;
-  }
-}
-
-/* =========================
-   OPTIONAL: 카드 2개씩 페이지 분리 (추천)
-========================= */
-@media print {
-  #projects .card:nth-child(2n),
-  #projects [class*="Card"]:nth-child(2n) {
-    page-break-after: always;
   }
 }

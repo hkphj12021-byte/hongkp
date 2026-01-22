@@ -42,7 +42,7 @@
 
   /* 이미지 문제의 핵심 */
   #projects img {
-    width: 100% !important;
+    width: auto !important;
     height: auto !important;   /* ⭐ h-48 제거 */
     max-height: none !important;
 

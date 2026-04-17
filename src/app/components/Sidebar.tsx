@@ -1,17 +1,18 @@
-import { useState, useEffect } from "react";
-import { Menu, X, LayoutDashboard, Briefcase, FileText, CheckCircle, Lightbulb } from "lucide-react";
+import { useState } from "react";
+import { Menu, X, LayoutDashboard, Briefcase, FileText, CheckCircle, Lightbulb, AlertTriangle, Award } from "lucide-react";
 
 export function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Close sidebar on desktop automatically, but keep logic simple by just hiding/showing via CSS
   const navItems = [
     { label: "Overview", id: "hero", icon: LayoutDashboard },
     { label: "Core Logic", id: "core-project", icon: FileText },
     { label: "Projects", id: "projects", icon: Briefcase },
+    { label: "Incident Report", id: "incident-report", icon: AlertTriangle },
     { label: "Timeline", id: "experience", icon: CheckCircle },
     { label: "Capabilities", id: "skills", icon: Lightbulb },
     { label: "Case Study", id: "problem-solving", icon: FileText },
+    { label: "Achievements", id: "achievements", icon: Award },
   ];
 
   const scrollToSection = (id: string) => {

@@ -1,4 +1,4 @@
-import { Briefcase, ArrowUpRight, ExternalLink } from "lucide-react";
+import { Briefcase, ArrowUpRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { Badge } from "../ui/badge";
 
@@ -19,8 +19,8 @@ export function ProjectsWidget({ id }: { id: string }) {
       category: "웹/앱 고도화",
       description: "외교부 해외안전여행 플랫폼의 전반적인 기능 개선과 UI/UX 구조 재정비를 총괄한 리뉴얼 프로젝트입니다. 요구사항 정의부터 WBS·RFP 분석까지 기획 전 과정을 리드하며, 홈페이지·앱 오픈 이후 2차 고도화 및 유지보수 계약 체계까지 수립했습니다.",
       image: "https://images.unsplash.com/photo-1642873965200-4dd3753336b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBzYWZldHklMjB3ZWJzaXRlJTIwYXBwfGVufDF8fHx8MTc2ODk1Nzc2OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["요구사항정의", "기획설계", "WBS 작성", "RFP 분석", "품질관리(QA)", "산출물작성 및 관리", "고객사 커뮤니케이션"],
-      metrics: ["홈페이지 및 앱 오픈 완료", "PM/기획 동시진행 80%", "백오피스 분석 설계", "유지보수 협의"]
+      tags: ["요구사항정의", "기획설계", "WBS 작성", "RFP 분석", "품질관리(QA)", "산출물작성 및 관리"],
+      metrics: ["홈페이지 및 앱 오픈 완료", "PM/기획 진행 80% 달성", "백오피스 분석 설계", "2차 고도화 계약 수립"]
     },
     {
       title: "함께학교 배리어프리 서비스 구축",
@@ -28,8 +28,8 @@ export function ProjectsWidget({ id }: { id: string }) {
       category: "신규 구축",
       description: "공공 서비스의 접근성 요건을 사후 검증이 아닌 기획 초기 구조 설계 기준으로 재정의한 프로젝트입니다. 장애 유형별 사용자 시나리오를 기반으로 서비스 구조와 정책을 총괄 설계했으며, 그 결과 배리어프리 웹사이트 오픈 및 웹 접근성 품질인증 마크를 획득했습니다.",
       image: "https://images.unsplash.com/photo-1576864333223-db90dadfb975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2Nlc3NpYmlsaXR5JTIwZWR1Y2F0aW9uJTIwd2Vic2l0ZXxlbnwxfHx8fDE3Njg5NTc3Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["요구사항정의", "기획설계", "배리어프리", "품질관리(QA)", "고객사 커뮤니케이션"],
-      metrics: ["웹사이트 오픈", "웹 접근성 인증마크 획득", "기여도 85%"]
+      tags: ["요구사항정의", "기획설계", "배리어프리", "품질관리(QA)"],
+      metrics: ["웹사이트 오픈 완료", "웹 접근성 인증(WA) 마크 획득", "PM 기여도 85%"]
     },
     {
       title: "브랜드 홈 홈페이지 고도화",
@@ -38,7 +38,7 @@ export function ProjectsWidget({ id }: { id: string }) {
       description: "고객 요구사항을 기반으로 프로젝트 범위와 일정을 정의하고, WBS 수립·투입 인력 관리·산출물 작성 및 고객 커뮤니케이션을 총괄한 프로젝트입니다. 기획·개발·운영 전 과정을 관리하여 1차 고도화를 완료했으며, 2차 고도화에 대한 구두 계약 성과를 도출했습니다.",
       image: "https://images.unsplash.com/photo-1594200879785-b6ee4fc48712?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjYXIlMjB3ZWJzaXRlfGVufDF8fHx8MTc2OTA3MTc2NXww&ixlib=rb-4.1.0&q=80&w=1080",
       tags: ["요구사항 정의/분석", "일정관리", "인력관리", "산출물 관리"],
-      metrics: ["고객 만족도 향상", "2차 고도화 계약", "PM역할 50%"]
+      metrics: ["1차 고도화 완료", "2차 고도화 구두 계약 성과 도출", "PM역할 50%"]
     },
     {
       title: "대고객 플랫폼 개선 프로젝트",
@@ -47,7 +47,7 @@ export function ProjectsWidget({ id }: { id: string }) {
       description: "고객 요구사항을 기반으로 프로젝트 범위와 일정을 정의하고, WBS 수립·투입 인력 운영·산출물 관리 및 고객 커뮤니케이션을 총괄한 개선 프로젝트입니다. 주요 기능 고도화를 안정적으로 완료하여 대고객 서비스 품질을 개선했습니다.",
       image: "https://images.unsplash.com/photo-1519114761417-81be330afa42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBidWlsZGluZyUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NjkwNzE3NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       tags: ["요구사항 정의", "일정관리", "인력관리", "요구사항 분석", "산출물관리"],
-      metrics: ["2차 고도화 기능 협의", "고도화 구두 협의", "사용자 편의성 향상"]
+      metrics: ["주요 기능 고도화 완료", "2차 고도화 기능 협의 완료", "대고객 서비스 품질 향상"]
     },
     {
       title: "자사 플랫폼 고도화 및 UX 개선 프로젝트",
@@ -56,7 +56,7 @@ export function ProjectsWidget({ id }: { id: string }) {
       description: "자사 웹·모바일 서비스의 기능 개선과 UX 리뉴얼을 중심으로 요구사항 분석부터 기획·개발 협업·성과 분석까지 전 과정을 리드한 프로젝트입니다. 주요 기능 개선, 모바일 리뉴얼, 이벤트 기획을 통해 사용자 편의성과 재방문율 및 매출 지표 개선 성과를 도출했습니다.",
       image: "https://images.unsplash.com/photo-1590483200421-58b5a8a0be55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1eCUyMHVpJTIwZGVzaWduJTIwaW1wcm92ZW1lbnR8ZW58MXx8fHwxNzY4OTU3NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       tags: ["개선안 PT발표", "기능기획", "UX리뉴얼", "이벤트 기획", "운영 및 성과 분석"],
-      metrics: ["핵심 기능 UX개선 및 운영 효율성 향상", "모바일 리뉴얼을 통한 사용자 20~30% 증가"]
+      metrics: ["핵심 기능 UX개선 및 운영 효율성 향상", "모바일 리뉴얼을 통한 사용자 20~30% 증가 달성"]
     },
     {
       title: "서비스 통합 및 회원 전환 프로젝트",
@@ -98,18 +98,13 @@ export function ProjectsWidget({ id }: { id: string }) {
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <div className="flex justify-between items-start mb-2">
-                    <div>
-                      <div className="text-xs font-semibold text-indigo-600 mb-1 tracking-wide">
-                        {project.client}
-                      </div>
-                      <h3 className="text-lg font-bold text-slate-900 truncate pr-4">
-                        {project.title}
-                      </h3>
+                  <div className="mb-2">
+                    <div className="text-xs font-semibold text-indigo-600 mb-1 tracking-wide">
+                      {project.client}
                     </div>
-                    <button className="text-slate-400 hover:text-indigo-600 transition-colors shrink-0">
-                      <ExternalLink className="w-4 h-4" />
-                    </button>
+                    <h3 className="text-lg font-bold text-slate-900 pr-4">
+                      {project.title}
+                    </h3>
                   </div>
                   
                   <p className="text-sm text-slate-600 mb-4 line-clamp-2 leading-relaxed">
@@ -147,12 +142,6 @@ export function ProjectsWidget({ id }: { id: string }) {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="p-4 border-t border-slate-100 bg-slate-50 text-center">
-          <button className="text-sm font-medium text-indigo-600 hover:text-indigo-700 transition-colors">
-            View All Projects
-          </button>
         </div>
       </div>
     </section>

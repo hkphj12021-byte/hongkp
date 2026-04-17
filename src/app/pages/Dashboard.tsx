@@ -4,6 +4,8 @@ import { ProjectsWidget } from "../components/widgets/ProjectsWidget";
 import { TimelineWidget } from "../components/widgets/TimelineWidget";
 import { SkillsWidget } from "../components/widgets/SkillsWidget";
 import { ProblemSolvingWidget } from "../components/widgets/ProblemSolvingWidget";
+import { IncidentReportWidget } from "../components/widgets/IncidentReportWidget";
+import { AchievementsWidget } from "../components/widgets/AchievementsWidget";
 
 export function Dashboard() {
   return (
@@ -13,6 +15,7 @@ export function Dashboard() {
         <div className="lg:col-span-2 space-y-8">
           <CoreProjectWidget id="core-project" />
           <ProjectsWidget id="projects" />
+          <IncidentReportWidget id="incident-report" />
         </div>
         <div className="space-y-8">
           <TimelineWidget id="experience" />
@@ -20,6 +23,7 @@ export function Dashboard() {
           <ProblemSolvingWidget id="problem-solving" />
         </div>
       </div>
+      <AchievementsWidget id="achievements" />
     </div>
   );
 }
